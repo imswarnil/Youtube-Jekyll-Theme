@@ -1,0 +1,99 @@
+@import 'variables';
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+}
+
+header {
+  background-color: $base-100;
+  color: $neutral;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: $secondary;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: $primary; /* Hover color as primary color */
+}
+
+.logo-container {
+  flex: 0 0 120px;
+}
+
+.logo {
+  max-width: 100%;
+  height: auto;
+  max-height: 40px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #ddd; /* You can replace this with $neutral or any other color variable */
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-button {
+  background-color: $primary;
+  color: $base-100;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column; /* Stack items in a column on smaller screens */
+    align-items: center; /* Center items on smaller screens */
+  }
+
+  .logo-container {
+    flex: 0 0 60px;
+    margin-bottom: 10px; /* Add space below the logo container on smaller screens */
+  }
+
+  nav ul {
+    flex-direction: column; /* Stack navigation items in a column on smaller screens */
+    align-items: center; /* Center items on smaller screens */
+  }
+
+  nav ul li {
+    margin: 0; /* Remove margin between navigation items on smaller screens */
+    margin-bottom: 10px; /* Add space between navigation items on smaller screens */
+  }
+}

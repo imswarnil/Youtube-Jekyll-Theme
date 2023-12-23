@@ -1,0 +1,58 @@
+// base.scss
+
+@import 'variables'; // Import your color variables
+
+* {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+button, textarea {
+  outline: none;
+}
+
+.pagination {
+  text-align: center;
+  padding: 20px;
+}
+
+.previous {
+  float: left;
+}
+
+.next {
+  float: right;
+}
+
+input, textarea {
+  width: 100%;
+  margin: 10px;
+  padding: 5px;
+}
+
+body {
+  font-family: $fonts;
+} 
+
+time {
+  display: block;
+  font-size: 0.8em;
+  color: $neutral; // Use neutral color from variables
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav {
+  text-align: center;
+}
+
+blockquote {
+  border-left: 5px solid $neutral; // Use neutral color from variables
+  padding-left: 15px;
+}

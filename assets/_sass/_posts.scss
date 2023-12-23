@@ -1,0 +1,22 @@
+// _posts.scss
+
+@import 'variables'; // Import your color variables
+
+.posts {
+  padding: 0 10%;
+  background-color: $primary;
+}
+
+.posts a {
+  display: block;
+  padding: 5%;
+  margin: 5%;
+  color: $neutral; // Use neutral color from variables
+  transition: all 0.3s ease;
+}
+
+.posts a:hover {
+  background: $accent; // Use accent color from variables
+  border-radius: 10px;
+  box-shadow: 0 0 5px 2px $neutral; // Use neutral color from variables
+}
